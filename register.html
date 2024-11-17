@@ -19,12 +19,10 @@
         <h2>Register</h2>
         
                 <ul class="flashes">
-                    {% for category, message in messages %}
                         <li class="{{ category }}">{{ message }}</li>
-                    {% endfor %}
+                    
                 </ul>
-            {% endif %}
-        {% endwith %}
+            
 
         <form method="POST" action="{{ url_for('register') }}">
             <label for="first_name">First Name:</label>
